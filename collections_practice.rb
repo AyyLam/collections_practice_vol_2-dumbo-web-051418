@@ -64,9 +64,6 @@ def merge_data(keys, data)
   res 
 end
   
-  
-end
-
 def find_cool(array)
   res = [] 
   array.each do |element| 
