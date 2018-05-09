@@ -54,7 +54,7 @@ def merge_data(keys, data)
   keys.each do |hash|
     res << hash
   end
-  keys.each do |hash2|
+  res.each do |hash2|
     hash2.each do |key, value|
       first_name = value 
     data.each do |name, traits| 
