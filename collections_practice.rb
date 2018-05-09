@@ -58,8 +58,10 @@ def merge_data(keys, data)
     hash2.each do |key, value|
       first_name = value 
     data.each do |name, traits| 
-      if first_name == name 
-        res << traits 
+      if first_name == name
+        traits.each do |trait, answer|
+          res[trait] = answer
+        end
       end
     end
   end
