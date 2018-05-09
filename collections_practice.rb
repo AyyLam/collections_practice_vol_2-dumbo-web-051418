@@ -52,22 +52,18 @@ end
 def merge_data(keys, data)
   res = []
   keys.each do |hash|
-    res << hash
-  end
-  res.each do |hash2|
-    hash2.each do |key, value|
-      first_name = value 
-    data.each do |name, traits| 
-      if first_name == name
-        traits.each do |trait, answer|
-          res[trait] = answer
+  data.each do |person|
+    person.each do |key, value|
+      if hash[:first_name] == key
+        value[:first_name] = key 
+    res << v 
         end
       end
     end
   end
 end 
   res 
-end
+
   
 def find_cool(array)
   res = [] 
