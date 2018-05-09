@@ -56,7 +56,7 @@ def merge_data(keys, data)
     person.each do |key, value|
       if hash[:first_name] == key
         value[:first_name] = key 
-    res << v 
+    res << value
         end
       end
     end
